@@ -1,3 +1,9 @@
+"""
+Unit tests for the clothing_recommendation module. 
+Tests the get_clothing_recommendation function with various weather conditions,
+temperatures, and precipitation levels to ensure appropriate clothing recommendations are made.
+"""
+
 import unittest
 from clothing_recommendation import get_clothing_recommendation
 
