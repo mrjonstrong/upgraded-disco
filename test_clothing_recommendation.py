@@ -14,7 +14,8 @@ class TestClothingRecommendation(unittest.TestCase):
 
     def test_sunny_warm(self):
         """
-        Test if the function returns the correct clothing recommendation for sunny and warm weather conditions.
+        Test if the function returns the correct clothing recommendation for sunny and warm weather 
+        conditions.
         """
         weather = "sunny"
         temperature = 80
@@ -28,7 +29,8 @@ class TestClothingRecommendation(unittest.TestCase):
 
     def test_rainy_cold(self):
         """
-        Test if the function returns the correct clothing recommendation for rainy and cold weather conditions.
+        Test if the function returns the correct clothing recommendation for rainy and cold weather
+          conditions.
         """
         weather = "rainy"
         temperature = 40
@@ -42,7 +44,8 @@ class TestClothingRecommendation(unittest.TestCase):
 
     def test_snowy(self):
         """
-        Test if the function returns the correct clothing recommendation for snowy weather conditions.
+        Test if the function returns the correct clothing recommendation for snowy weather 
+        conditions.
         """
         weather = "snowy"
         temperature = 30
@@ -56,7 +59,8 @@ class TestClothingRecommendation(unittest.TestCase):
 
     def test_cloudy_mild(self):
         """
-        Test if the function returns the correct clothing recommendation for cloudy and mild weather conditions.
+        Test if the function returns the correct clothing recommendation for cloudy and mild weather 
+        conditions.
         """
         weather = "cloudy"
         temperature = 65

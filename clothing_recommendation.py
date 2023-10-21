@@ -16,7 +16,7 @@ def sunny_clothing(temperature):
     """
     if temperature > 75:
         return "Shorts and a t-shirt should be fine."
-    elif temperature > 60:
+    if temperature > 60:
         return "A long sleeve shirt and pants should be comfortable."
     else:
         return "Consider wearing a jacket."
@@ -33,7 +33,7 @@ def rainy_clothing(temperature):
     """
     if temperature > 75:
         return "Shorts and a t-shirt should be fine underneath."
-    elif temperature > 60:
+    if temperature > 60:
         return "A long sleeve shirt and pants should be comfortable."
     else:
         return "Consider wearing a warm jacket."
@@ -65,7 +65,7 @@ def cloudy_clothing(temperature):
     """
     if temperature > 75:
         return "Shorts and a t-shirt should be fine."
-    elif temperature > 60:
+    if temperature > 60:
         return "A long sleeve shirt and pants should be comfortable."
     else:
         return "Consider wearing a jacket."
@@ -89,18 +89,18 @@ def get_clothing_recommendation(weather, temperature, precipitation):
     Returns:
     - str: A string containing the clothing recommendation.
     """
-    
+
     base_clothing, func = WEATHER_CLOTHING_MAP.get(weather.lower(), (None, None))
     if base_clothing is None:
         return "Clothing: Please check the entered weather condition."
-    
+   
     clothing = "Clothing: " + base_clothing
-    
+   
     if weather.lower() == "snowy":
         clothing += func(precipitation)
     else:
         clothing += func(temperature)
-    
+   
     return clothing
 
 def main():
