@@ -93,14 +93,14 @@ def get_clothing_recommendation(weather, temperature, precipitation):
     base_clothing, func = WEATHER_CLOTHING_MAP.get(weather.lower(), (None, None))
     if base_clothing is None:
         return "Clothing: Please check the entered weather condition."
-   
+
     clothing = "Clothing: " + base_clothing
-   
+
     if weather.lower() == "snowy":
         clothing += func(precipitation)
     else:
         clothing += func(temperature)
-   
+ 
     return clothing
 
 def main():
