@@ -1,4 +1,16 @@
 def get_clothing_recommendation(weather, temperature, precipitation):
+    """
+    Determine appropriate clothing based on the weather, temperature, and precipitation.
+
+    Parameters:
+    - weather (str): Current weather condition (sunny, rainy, snowy, cloudy).
+    - temperature (float): Current temperature in Fahrenheit.
+    - precipitation (float): Current precipitation percentage.
+
+    Returns:
+    - str: A string containing the clothing recommendation.
+    """
+    
     clothing = "Clothing: "
 
     if weather.lower() == "sunny":
@@ -40,6 +52,10 @@ def get_clothing_recommendation(weather, temperature, precipitation):
     return clothing
 
 def main():
+    """
+    Execute the main program to ask the user for weather details and provide clothing recommendations.
+    """
+    
     weather = input("Enter the current weather (sunny, rainy, snowy, cloudy): ")
     try:
         temperature = float(input("Enter the current temperature in Fahrenheit: "))
