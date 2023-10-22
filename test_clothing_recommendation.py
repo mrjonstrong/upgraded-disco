@@ -65,7 +65,7 @@ class TestClothingRecommendation(unittest.TestCase):
         weather = "cloudy"
         temperature = 65
         precipitation = 20
-        expected = ("Clothing: A long sleeve shirt and pants should be comfortable.")
+        expected = "Clothing: A long sleeve shirt and pants should be comfortable."
         self.assertEqual(
             get_clothing_recommendation(weather, temperature, precipitation),
             expected

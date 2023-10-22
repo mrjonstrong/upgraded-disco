@@ -100,7 +100,7 @@ def get_clothing_recommendation(weather, temperature, precipitation):
         clothing += func(precipitation)
     else:
         clothing += func(temperature)
- 
+
     return clothing
 
 def main():
