@@ -4,6 +4,8 @@ temperature, and precipitation. The application's complexity is reduced by using
 and dictionaries to handle different weather conditions and recommendations.
 """
 
+LONG_SLEEVE_PANT = "A long sleeve shirt and pants should be comfortable."
+
 def sunny_clothing(temperature):
     """
     Provides clothing recommendation for sunny weather based on the temperature.
@@ -17,7 +19,7 @@ def sunny_clothing(temperature):
     if temperature > 75:
         return "Shorts and a t-shirt should be fine."
     if temperature > 60:
-        return "A long sleeve shirt and pants should be comfortable."
+        return LONG_SLEEVE_PANT
     else:
         return "Consider wearing a jacket."
 
@@ -34,7 +36,7 @@ def rainy_clothing(temperature):
     if temperature > 75:
         return "Shorts and a t-shirt should be fine underneath."
     if temperature > 60:
-        return "A long sleeve shirt and pants should be comfortable."
+        return LONG_SLEEVE_PANT
     else:
         return "Consider wearing a warm jacket."
 
@@ -66,7 +68,7 @@ def cloudy_clothing(temperature):
     if temperature > 75:
         return "Shorts and a t-shirt should be fine."
     if temperature > 60:
-        return "A long sleeve shirt and pants should be comfortable."
+        return LONG_SLEEVE_PANT
     else:
         return "Consider wearing a jacket."
 
